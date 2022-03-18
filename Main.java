@@ -1,5 +1,7 @@
 //las clases en java deben tener el mismo nombre del archivo
-
+// si no se define modificador de acceso a la clase
+//ella toma el valor default : el cual permite que 
+//esta clase sea accedida desde otras clases y paquetes
 class Main {
     
     public static void main(String[] args) {
@@ -9,17 +11,17 @@ class Main {
         //el objeto de empezar por el nombre de la clase
         //luego el nombre del objeto
         //luego el metodo constructor
-        Car car = new Car("AMQ123",new Acount("Andres Herrera","AND123"));
+        UberX uberX = new UberX("AMQ123",new Acount("Andres Herrera","AND123"),"Chevrolet","Sonic");
        // car.license = "AMQ123";
-       // car.passenger = 4;
+        uberX.setPassenger(3);
       //  car.driver = "Eduardo Ramos";
-        //car.printDataCar();
+        uberX.printDataCar();
         //creamos objeto de la clase car
-        Car car2 = new Car("AMQ123",new Acount("Andres Herrera","AND123"));
+        //Car car2 = new Car("AMQ123",new Acount("Andres Herrera","AND123"));
         /*car2.license = "QWE567";
         car2.passenger = 3;
         car2.driver = "Andres Ramos";*/
-        car2.printDataCar();
+        //car2.printDataCar();
 
     }
 
