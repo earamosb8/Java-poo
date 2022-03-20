@@ -13,7 +13,7 @@ class Main {
         //luego el metodo constructor
         UberX uberX = new UberX("AMQ123",new Acount("Andres Herrera","AND123"),"Chevrolet","Sonic");
        // car.license = "AMQ123";
-        uberX.setPassenger(3);
+        uberX.setPassenger(4);
       //  car.driver = "Eduardo Ramos";
         uberX.printDataCar();
         //creamos objeto de la clase car
@@ -22,6 +22,9 @@ class Main {
         car2.passenger = 3;
         car2.driver = "Andres Ramos";*/
         //car2.printDataCar();
+        UberVan uberVan =  new UberVan("QKJ",new Acount("Eduarrdo Herrera","AND123"));
+        uberVan.setPassenger(6);
+        uberVan.printDataCar();
 
     }
 

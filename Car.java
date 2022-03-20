@@ -1,8 +1,8 @@
 class Car {
-    Integer id;
-    String license;
-    Acount driver;
-    private Integer passenger;
+    private Integer id;
+    private String license;
+    private Acount driver;
+    protected Integer passenger;
 
     public Car(String license, Acount driver ){
         //this hace referencia al atributo de clase
@@ -27,4 +27,30 @@ class Car {
         }
        
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Acount getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Acount driver) {
+        this.driver = driver;
+    }
+
+    
 }

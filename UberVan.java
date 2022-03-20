@@ -10,5 +10,19 @@ class UberVan extends Car{
        this.typeCarAccepted = typeCarAccepted;
        this.seatsMaterial = seatsMaterial;
    } 
+
+   public UberVan(String license,Acount driver){
+       super(license,driver);
+   }
+
+   //polimorfismo = cambiar el comportamiento de un metodo que viene de una clase padre
+   @Override
+   public void setPassenger(Integer passenger) {
+    if(passenger == 6){
+        this.passenger = passenger;
+    }else{
+        System.out.println("Necesiras asignar 6 pasajeros"); 
+    }
+   }
     
 }
